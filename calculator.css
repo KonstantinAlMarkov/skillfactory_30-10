@@ -1,0 +1,43 @@
+.calculator {
+    width: 400px;
+}
+
+.calculatorScreen {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;   
+    padding: 2px; 
+}
+
+.oneButtonLane {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;     
+    padding: 2px;
+}
+
+.fourButtonLane {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;     
+    padding: 2px;
+    grid-column-gap: 2px;
+}
+
+.calculatorButtonLane__buttonAction_calculate
+{
+    font-weight: bold;
+}
+
+.calculatorScreen_screen_viewResult_disabled
+{
+    pointer-events: none;
+    height: 100px;
+}
+
+.calculatorScreen__screen_viewOperand_disabled
+{
+    pointer-events: none;
+}
+
+

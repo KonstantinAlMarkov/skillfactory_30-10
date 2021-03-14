@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="calculator.css" type="text/css" />
+</head>
+
+<body>
+    <div class="calculator">
+        <!--блок для вывода-->
+        <div class="calculatorScreen">
+            <!--вывод результата-->
+            <textarea class="calculatorScreen_screen_viewResult_disabled"></textarea>
+        </div>
+        <div class="calculatorScreen">
+            <!--вывод текущего операнда-->
+            <input class="calculatorScreen__screen_viewOperand_disabled">
+        </div>
+        <!--блок с одной кнопкой-->
+        <div class="oneButtonLane">
+            <!--buttonAction - кнопка с действием-->
+            <button class="calculatorButtonLane__buttonAction_reset">C</button>
+        </div>
+        <!--блок с четырмя кнопками-->
+        <div class="fourButtonLane">
+            <!--buttonNum - кнопка с цифрой-->
+            <button class="calculatorButtonLane__buttonNum">1</button>
+            <button class="calculatorButtonLane__buttonNum">2</button>
+            <button class="calculatorButtonLane__buttonNum">3</button>
+            <button class="calculatorButtonLane__buttonOperator_twoOperators">+</button>
+        </div>
+        <div class="fourButtonLane">
+            <button class="calculatorButtonLane__buttonNum">4</button>
+            <button class="calculatorButtonLane__buttonNum">5</button>
+            <button class="calculatorButtonLane__buttonNum">6</button>
+            <button class="calculatorButtonLane__buttonOperator_twoOperators">-</button>
+        </div>
+        <div class="fourButtonLane">
+            <button class="calculatorButtonLane__buttonNum">7</button>
+            <button class="calculatorButtonLane__buttonNum">8</button>
+            <button class="calculatorButtonLane__buttonNum">9</button>
+            <button class="calculatorButtonLane__buttonOperator_twoOperators">*</button>
+        </div>
+        <div class="fourButtonLane">
+            <button class="calculatorButtonLane__buttonAction_calculate">=</button>
+            <button class="calculatorButtonLane__buttonNum">0</button>
+            <button class="calculatorButtonLane__buttonOperator_singleOperator">sqrt</button>
+            <button class="calculatorButtonLane__buttonOperator_twoOperators">/</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
